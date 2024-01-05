@@ -42,10 +42,11 @@ const StickyNote = ({
       {edit ? (
         <div>
           <textarea
+            autofocus
             value={message}
             rows={6}
             onChange={handleChangeNote}
-            className="w-[200px] bg-transparent mt-1 "
+            className="w-[200px] bg-transparent mt-1 px-1"
           />
           <button
             onClick={() => {
